@@ -47,12 +47,36 @@ skinparam DefaultFontName "Segoe UI"
 
 
 
-/' Declarations '/
-actor "user"
+/' Classes under current config '/
+class Application {
+  loadApplication(data)
+}
+
+class form {
+  String data
+  
+  createRecord()
+  showForm()
+  displayDataTable(records)
+  showForm()
+  contentArea()
+}
+
+class Dashboard {
+  string tableRows
+  string tableHTML
+  string dashboardNavItem
+  getAllRecords()
+  contentArea()
+}
+class login {
+   string loginButton
+   sendLoginCreds()
+}
+class Nav {
+  addToNavUI
+  formNavItem
+}
 
 
-/'Flow '/
-/'Step: User Logs in '/
-
-/'END Flow '/
 @enduml
