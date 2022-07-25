@@ -1,0 +1,58 @@
+@startuml 
+
+/' 
+More information here:
+https://plantuml.com/sequence-diagram
+made with:
+https://plantuml-editor.kkeisuke.com/
+'/
+
+title 
+App Architecture
+end title
+header  ""
+caption ""
+footer 
+created by Dan Petersen
+end footer
+
+
+/'STYLE'/
+'do not use UML style
+skinparam componentStyle rectangle
+
+'make appearance more neutral 
+skinparam Shadowing false
+skinparam ArrowColor #black
+skinparam InterfaceBorderColor #black
+
+skinparam RectangleBackgroundColor #lightgrey
+skinparam InterfaceBackgroundColor #white
+
+skinparam SequenceBoxBorderColor #black
+skinparam SequenceLifeLineBorderColor #black
+skinparam SequenceLifeLineBorderColor #black
+skinparam SequenceActorBorderColor #black
+skinparam SequenceBorderColor #black
+skinparam SequenceParticipantBorderColor #black
+skinparam NoteBorderColor #black
+
+skinparam QueueBackgroundColor #white
+skinparam QueueBorderColor #black
+
+skinparam ActorBackgroundColor #white
+
+'use standard font
+skinparam DefaultFontName "Segoe UI"
+
+
+
+/' Declarations '/
+actor "user"
+
+
+/'Flow '/
+/'Step: User Logs in '/
+
+/'END Flow '/
+@enduml
