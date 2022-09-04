@@ -1,0 +1,82 @@
+@startuml 
+
+/' 
+More information here:
+https://plantuml.com/sequence-diagram
+made with:
+https://plantuml-editor.kkeisuke.com/
+'/
+
+title 
+App Architecture
+end title
+header  ""
+caption ""
+footer 
+created by Dan Petersen
+end footer
+
+
+/'STYLE'/
+'do not use UML style
+skinparam componentStyle rectangle
+
+'make appearance more neutral 
+skinparam Shadowing false
+skinparam ArrowColor #black
+skinparam InterfaceBorderColor #black
+
+skinparam RectangleBackgroundColor #lightgrey
+skinparam InterfaceBackgroundColor #white
+
+skinparam SequenceBoxBorderColor #black
+skinparam SequenceLifeLineBorderColor #black
+skinparam SequenceLifeLineBorderColor #black
+skinparam SequenceActorBorderColor #black
+skinparam SequenceBorderColor #black
+skinparam SequenceParticipantBorderColor #black
+skinparam NoteBorderColor #black
+
+skinparam QueueBackgroundColor #white
+skinparam QueueBorderColor #black
+
+skinparam ActorBackgroundColor #white
+
+'use standard font
+skinparam DefaultFontName "Segoe UI"
+
+
+
+/' Classes under current config '/
+class Application {
+  loadApplication(data)
+}
+
+class form {
+  String data
+  
+  createRecord()
+  showForm()
+  displayDataTable(records)
+  showForm()
+  contentArea()
+}
+
+class Dashboard {
+  string tableRows
+  string tableHTML
+  string dashboardNavItem
+  getAllRecords()
+  contentArea()
+}
+class login {
+   string loginButton
+   sendLoginCreds()
+}
+class Nav {
+  addToNavUI
+  formNavItem
+}
+
+
+@enduml
